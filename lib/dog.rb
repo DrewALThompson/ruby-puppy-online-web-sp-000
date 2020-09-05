@@ -2,6 +2,8 @@ class Dog
   
   @@all = []
   
+  attr_accessor :name
+  
   def initialize(name)
     @name = name
     @@all << self
@@ -12,6 +14,8 @@ class Dog
   end
   
   def self.print_all
-    @@all.all
+    @@all.each {|name| puts name }
   end
+    
+  
 end
